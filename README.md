@@ -6,6 +6,20 @@ Herramienta de consola para Windows que completa automáticamente las Quests de 
 
 Relanza Discord con el puerto de depuración 9222 abierto, se conecta por WebSocket mediante Chrome DevTools Protocol e inyecta un script que localiza los módulos internos del cliente. Simula el progreso de video, juego, stream y actividad enviando heartbeats a la API y falseando el juego en ejecución.
 
+## Uso
+
+1. Abre Discord (app de escritorio) y **acepta una misión** puede ser cualquiera a excepcion de las que piden autenticacion o conectar una cuenta.
+2. Ejecuta `orbs_sweeper.exe`.
+3. Elige la opción **`[01] Iniciar`**.
+4. Discord se **reiniciará solo** con el puerto de depuración abierto. Espera a que cargue.
+5. Vuelve a la pestaña de **Misiones** y listo: el programa completará las misiones pendientes automáticamente.
+
+> [!NOTE]
+> - Solo se procesan las misiones que ya aceptaste, así que acepta todas las que quieras completar antes de iniciar.
+> - El programa solo es compatible con la version de escritorio de Discord.
+> - Deja la consola abierta para ver el progreso. Si algo falla, usa **`[02] Iniciar en debug`** para ver mensajes más detallados y enviame el log por discord (agente_308) si no puedes corregirlo tu mismo.
+> - Desde **`[03] Configuración`** puedes activar o desactivar la notificación de Windows al completar una misión.
+
 ## Compilación
 
 Requisitos: Windows 10/11 y MSVC (Visual Studio o Build Tools).
