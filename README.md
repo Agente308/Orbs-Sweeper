@@ -9,7 +9,7 @@ Requisitos: Windows 10/11 y MSVC (Visual Studio o Build Tools).
 
 Abre **x64 Native Tools Command Prompt for VS** y ejecuta:
 
-    cl /nologo /O2 /W3 /utf-8 /D_CRT_SECURE_NO_WARNINGS discord_quest.c /Fe:orbs_sweeper.exe
+    cl /nologo /O2 /W3 /utf-8 /D_CRT_SECURE_NO_WARNINGS orbs_sweeper.c /Fe:orbs_sweeper.exe
 
 <p align="center">
   <img width="511" height="666" alt="ejemplo"
